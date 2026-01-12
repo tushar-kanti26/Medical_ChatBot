@@ -15,23 +15,37 @@ LangChain	LLM orchestration
 Gemini API	Large Language Model
 Pinecone	Vector database
 Flask	Web framework
+
 📂 Project Structure
 Medical_ChatBot/
 │
 ├── data/                 # Medical documents / PDFs used for embeddings
+
 ├── research/             # Experiments, notebooks, or R&D files
+
 ├── src/                  # Core source code (LLM, chains, helpers)
+
 ├── static/               # Static files (CSS, JS, images)
+
 ├── templates/            # HTML templates for Flask UI
+
 │
 ├── .env                  # Environment variables (API keys)
+
 ├── .gitignore            # Files ignored by Git
+
 ├── app.py                # Main Flask application
+
 ├── store_index.py        # Embedding creation & Pinecone storage
+
 ├── requirements.txt      # Python dependencies
+
 ├── setup.py              # Package setup configuration
+
 ├── LICENSE               # Project license
+
 └── README.md             # Project documentation
+
 
 🚀 How to Run the Project
 🔹 Step 1: Clone the Repository
