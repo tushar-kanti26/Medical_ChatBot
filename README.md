@@ -1,51 +1,47 @@
-🏥 Medical ChatBot
+# 🏥 Medical ChatBot
 
-An AI-powered medical chatbot built using LangChain, Gemini, and Pinecone, with a Flask-based web interface.
+An AI-powered medical assistant designed to provide accurate information by leveraging Retrieval-Augmented Generation (RAG). This project uses **Gemini** for reasoning, **Pinecone** for vector search, and **LangChain** for orchestration, all wrapped in a sleek **Flask** web interface.
 
-🔐 Security
+---
 
-Secure API key handling using .env
+## 🌟 Features
 
-No secrets committed to GitHub
+* **RAG Integration:** Uses Pinecone to retrieve relevant medical context before generating answers.
+* **LLM Powered:** Utilizes Google’s Gemini API for high-quality conversational responses.
+* **Vector Storage:** Efficiently stores and searches medical document embeddings.
+* **Web UI:** A user-friendly interface built with Flask, HTML, and CSS.
+* **Security First:** Environment variable management to protect sensitive API keys.
 
-🛠 Tech Stack
-Technology	Purpose
-Python	Core programming language
-LangChain	LLM orchestration
-Gemini API	Large Language Model
-Pinecone	Vector database
-Flask	Web framework
+---
 
-📂 Project Structure
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+| :--- | :--- |
+| **Python** | Core programming language |
+| **LangChain** | LLM orchestration and RAG framework |
+| **Gemini API** | Large Language Model (Google) |
+| **Pinecone** | Vector database for similarity search |
+| **Flask** | Web framework for the frontend |
+
+---
+
+## 📂 Project Structure
+
+```text
 Medical_ChatBot/
-│
-├── data/                 # Medical documents / PDFs used for embeddings
-
-├── research/             # Experiments, notebooks, or R&D files
-
-├── src/                  # Core source code (LLM, chains, helpers)
-
-├── static/               # Static files (CSS, JS, images)
-
-├── templates/            # HTML templates for Flask UI
-
-│
-├── .env                  # Environment variables (API keys)
-
-├── .gitignore            # Files ignored by Git
-
-├── app.py                # Main Flask application
-
-├── store_index.py        # Embedding creation & Pinecone storage
-
-├── requirements.txt      # Python dependencies
-
-├── setup.py              # Package setup configuration
-
-├── LICENSE               # Project license
-
-└── README.md             # Project documentation
-
+├── data/              # Medical documents / PDFs for embeddings
+├── research/          # Experiments, notebooks, and R&D files
+├── src/               # Core source code (LLM chains, helpers)
+├── static/            # Frontend assets (CSS, JS, images)
+├── templates/         # HTML templates for Flask UI
+├── .env               # Environment variables (Private)
+├── .gitignore         # Files ignored by Git
+├── app.py             # Main Flask application
+├── store_index.py     # Script to create & store embeddings
+├── requirements.txt   # Python dependencies
+├── setup.py           # Package setup configuration
+└── LICENSE            # Project license
 
 🚀 How to Run the Project
 🔹 Step 1: Clone the Repository
