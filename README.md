@@ -7,7 +7,7 @@ An AI-powered medical assistant designed to provide accurate information by leve
 ## 🖼️ Project Screenshots
 
 ### **Chatbot Interface**
-| User Conversation | AI Response |
+| User Conversation | Code |
 | :---: | :---: |
 | ![Chatbot 1](Screenshots/chatbot1.png) | ![Chatbot 2](Screenshots/coding.png) |
 
@@ -15,7 +15,7 @@ An AI-powered medical assistant designed to provide accurate information by leve
 
 ### **Vector Database (Pinecone)**
 <p align="center">
-  <img src="screenshots/pinecone_db.png" width="800" alt="Pinecone Index">
+  <img src="Screenshots/pinecone_db.png" width="800" alt="Pinecone Index">
   <br>
   <em>Visualizing medical document embeddings stored in Pinecone</em>
 </p>
@@ -58,3 +58,24 @@ Medical_ChatBot/
 ├── store_index.py     # Script to create & store embeddings
 ├── requirements.txt   # Python dependencies
 └── README.md          # Documentation
+
+🚀 Getting Started
+🔹 Step 1: Clone the Repository
+Bash
+
+git clone [https://github.com/tushar-kanti26/Medical_ChatBot.git](https://github.com/tushar-kanti26/Medical_ChatBot.git)
+cd Medical_ChatBot
+🔹 Step 2: Setup Environment
+Bash
+
+conda create -n medibot python=3.10 -y
+conda activate medibot
+pip install -r requirements.txt
+🔹 Step 3: Run the Project
+1.Add your PINECONE_API_KEY and GEMINI_API_KEY to the .env file.
+
+2.Run python store_index.py to process PDFs.
+
+3.Run python app.py to start the server.
+
+4.Visit http://localhost:5000.
